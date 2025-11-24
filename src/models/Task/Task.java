@@ -21,5 +21,9 @@ public abstract class Task {
         this.responsible = responsible;
     }
 
+    public TaskStatus getStatus(){
+        return this.status;
+    }
+
     public abstract double calculateScore();
 }

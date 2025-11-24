@@ -8,4 +8,8 @@ public abstract class Person {
         this.name = name;
         this.email = email;
     }
+
+    public String getName() {
+        return name;
+    }
 }
