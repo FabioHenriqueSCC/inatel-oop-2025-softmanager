@@ -1,5 +1,6 @@
 package models.Project;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import models.Person.Client;
@@ -19,6 +20,8 @@ public class Project {
         this.name = name;
         this.client = client;
         this.owner = owner;
+
+        this.tasks = new ArrayList<>();
     }
 
     public void addTask(Task task) {

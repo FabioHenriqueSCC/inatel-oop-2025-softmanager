@@ -21,9 +21,29 @@ public abstract class Task {
         this.responsible = responsible;
     }
 
+    public abstract double calculateScore();
+
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public LocalDate getDeadline() {
+        return deadline;
+    }
+
     public TaskStatus getStatus(){
         return this.status;
     }
 
-    public abstract double calculateScore();
+    public double getEstimatedHours() {
+        return estimatedHours;
+    }
+
+    public Person getResponsible() {
+        return responsible;
+    }
 }
