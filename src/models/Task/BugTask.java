@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import models.Person.Person;
 
 public class BugTask extends Task {
-    int severity;
+    private int severity;
 
     public BugTask(int id, String title, LocalDate deadline, double estimatedHours, Person responsible, int severity) {
         super(id, title, deadline, estimatedHours, responsible);
