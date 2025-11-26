@@ -28,19 +28,6 @@ public class Project {
         tasks.add(task);
     }
 
-    public double getProgress() {
-        if (tasks.isEmpty()) {
-            return 0;
-        }
-        int completedTasks = 0;
-        for (Task task : tasks) {
-            if (task.getStatus() == TaskStatus.DONE) {
-                completedTasks++;
-            }
-        }
-        return (double) completedTasks / tasks.size() * 100;
-    }
-
     public int getId() {
         return id;
     }
